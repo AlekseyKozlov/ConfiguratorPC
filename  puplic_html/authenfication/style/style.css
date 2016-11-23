@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+ background: url(/images/pc/bg.jpg) no-repeat center bottom fixed;
+ margin:0px;
+ font-family:Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', serif;
+ }
+
+#errormessage {
+ color: red;
+ font-family: "Arvo", "Myriad Pro", "Trebuchet MS", sans-serif;
+ font-size: 14px;
+ position: absolute;
+ top: 110px;
+ left: 45%;
+}
+
+input[type=text], select {
+ width: 100%;
+ border-radius: 5px;
+ margin: 7px 0;
+ border: 1px solid #ccc;
+ padding: 14px 18px; 
+ display: inline-block;
+ box-sizing: border-box;
+}
+
+input[type=email], select {
+ width: 100%;
+ border-radius: 5px;
+ margin: 7px 0;
+ border: 1px solid #ccc;
+ padding: 14px 18px; 
+ display: inline-block;
+ box-sizing: border-box;
+}
+
+input[type=password], select {
+ width: 100%;
+ border-radius: 5px;
+ margin: 7px 0;
+ border: 1px solid #ccc;
+ padding: 14px 18px; 
+ display: inline-block;
+ box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+ background-color: #00a7d1;
+}
+
+input[type=submit] {
+ width: 100%;
+ border: none;
+ color: white;
+ padding: 14px 20px;
+ background-color: #8A2BE2;
+ font-family: 'Roboto', sans-serif;
+ margin: 8px 0;
+ cursor: pointer;
+ border-radius: 4px;
+ 
+}
+
+button[type=button] {
+ width: 100%;
+ border: none;
+ color: white;
+ padding: 14px 20px;
+ background-color: #8A2BE2;
+ font-family: 'Roboto', sans-serif;
+ margin: 8px 0;
+ cursor: pointer;
+ border-radius: 4px;
+ 
+}
+
+button[type=button]:hover {
+ background-color: #00a7d1;
+}
