@@ -37,18 +37,32 @@
 <?php
 if(isset($_POST["submit"]))
 {
+    //Including dbconfig file.
+    include 'dbconfig.php';
+
+    class SignInUp
+    {
+        // объявление свойства
+        public $var = 'first name';
+
+        // объявление метода
+        public function displayVar() {
+            echo $this->var;
+        }
+    }
+
+    $SignInUp = new SignInUp();
+    $name   =  $SignInUp;
+    $SignInUp->var = $_POST["Fname"];
  
- //Including dbconfig file.
-include 'dbconfig.php';
- 
-$fname = $_POST["Fname"];
+
 $lname = $_POST["Lname"];
 $email = $_POST["email"];
 $password = $_POST["password"];
 
 $EncryptPassword = md5($password);
 
-mysql_query("INSERT INTO signup (f_name,l_name,email,password) VALUES ('$fname','$lname','$email','$EncryptPassword')"); 
+mysql_query("INSERT INTO signup (f_name,l_name,email,password) VALUES ('$SignInUp->var','$lname','$email','$EncryptPassword')");
 
 echo '<center> Sign Up form successfully submitted. </center>';
 
