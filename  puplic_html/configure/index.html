@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  	
+	<title>Configurator page</title>
+</head>
+<body>
+<div class="cd-product-builder">
+	<header class="main-header">
+		<h1>Dream personal computer builder</h1>
+		
+		<nav class="cd-builder-main-nav disabled">
+			<ul>
+				<li class="active"><a href="#models">CPU's</a></li>
+				<li><a href="#colors">MotherBoards's</a></li>
+				<li><a href="#accessories">RAM memory</a></li>
+				<li><a href="#summary">Finish build</a></li>
+			</ul>
+		</nav>
+
+
+	</header>
+
+	<div class="cd-builder-steps">
+		<ul>
+			<li data-selection="models" class="active builder-step">
+				<section class="cd-step-content">
+					<header>
+						<h1>Select model CPU</h1>
+						<span class="steps-indicator">Step <b>1</b> of 4</span>
+					</header>
+
+					<ul class="models-list options-list cd-col-2s">
+						<li class="js-option js-radio" data-price="1723" data-model="product-01">
+							<span class="name">Intel Core i7 6950x</span>
+							<img src="./img/i76950x.jpg" alt="6950x">
+							<span class="price">from $1723</span>
+							<div class="radio"></div>
+						</li>
+
+						<li class="js-option js-radio" data-price="999" data-model="product-02">
+							<span class="name">Intel Core i7 6900k</span>
+							<img src="img/i76900k.jpg" alt="6900k">
+							<span class="price">from $999</span>
+							<div class="radio"></div>
+						</li>
+
+					</ul>
+				</section>
+			</li>
+		</ul>
+	</div>
+
+	<footer class="cd-builder-footer disabled step-1">
+		<div class="selected-product">
+			<img src="img/product01_col01.jpg" alt="Product preview">
+
+			<div class="tot-price">
+				<span>Total</span>
+				<span class="total">$<b>0</b></span>
+			</div>
+		</div>
+		
+		<nav class="cd-builder-secondary-nav">
+			<ul>
+				<li class="next nav-item">
+					<ul>
+						<li class="visible"><a href="#0">Next</a></li>
+						<li><a href="#0">Next</a></li>
+						<li><a href="#0">Next</a></li>
+						<li class="buy"><a href="#0">Save or print</a></li>
+					</ul>
+				</li>
+				<li class="prev nav-item">
+					<ul>
+						<li class="visible"><a href="#0">CPU's</a></li>
+						<li><a href="#0">MotherBoard</a></li>
+						<li><a href="#0">RAM</a></li>
+						<li><a href="#0">Finish build</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<span class="alert">Please, select a model CPU first! It is heart of PC)</span>
+	</footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
